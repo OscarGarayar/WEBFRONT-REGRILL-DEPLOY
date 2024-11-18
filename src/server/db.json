@@ -1,0 +1,103 @@
+{
+    "Suppliers": [
+        {
+            "id": 1,
+            "name": "ABC Supplies",
+            "address": "123 Industrial Road, Cityville",
+            "email": "contact@abcsupplies.com",
+            "phoneNumber": "123-456-7890",
+            "contactPerson": "John Doe",
+            "description": "Leading supplier of industrial tools and machinery.",
+            "businessType": "Manufacturing",
+            "ordersFinished": 10,
+            "ordersPending": 2
+        }
+    ],
+    "SupplierOrder": [
+        {
+            "id": 1,
+            "supplierId": 1,
+            "orderDate": "2024-09-01",
+            "deliveryDate": "2024-09-05",
+            "status": "Pending",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Harina",
+                    "quantity": "100 Kg",
+                    "price": "S/. 50"
+                },
+                {
+                    "id": 2,
+                    "name": "Aceite",
+                    "quantity": "50 Lt",
+                    "price": "S/. 100"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "supplierId": 2,
+            "orderDate": "2024-09-02",
+            "deliveryDate": "2024-09-06",
+            "status": "Delivered",
+            "items": [
+                {
+                    "id": 3,
+                    "name": "Tomate",
+                    "quantity": "200 Kg",
+                    "price": "S/. 20"
+                },
+                {
+                    "id": 4,
+                    "name": "Leche",
+                    "quantity": "80 Lt",
+                    "price": "S/. 70"
+                }
+            ]
+
+        }
+    ],
+    "Notifications": [
+        {
+            "id": 1,
+            "userId": 101,
+            "message": "Your order #5001 has been shipped.",
+            "type": "order",
+            "isRead": false,
+            "createdAt": "2023-09-28T10:30:00Z"
+        },
+        {
+            "id": 2,
+            "userId": 102,
+            "message": "Payment for invoice #2345 has been received.",
+            "type": "payment",
+            "isRead": false,
+            "createdAt": "2023-09-27T12:45:00Z"
+        },
+        {
+            "id": 3,
+            "userId": 103,
+            "message": "Your account has been updated successfully.",
+            "type": "info",
+            "isRead": true,
+            "createdAt": "2023-09-26T08:00:00Z"
+        },
+        {
+            "id": 4,
+            "userId": 101,
+            "message": "Reminder: Your order #5002 will be delivered tomorrow.",
+            "type": "reminder",
+            "isRead": false,
+            "createdAt": "2023-09-27T18:00:00Z"
+        },
+        {
+            "id": 5,
+            "userId": 104,
+            "message": "Your password has been changed.",
+            "type": "security",
+            "isRead": true,
+            "createdAt": "2023-09-25T15:20:00Z"
+        }
+    ]
+}
