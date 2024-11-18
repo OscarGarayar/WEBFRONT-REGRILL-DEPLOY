@@ -1,0 +1,834 @@
+<script>
+export default {
+    name: 'Landing'
+};
+</script>
+
+<template>
+    <div>
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Re-Grill - Optimize Your Restaurant Operations</title>
+
+        <!-- ICONS -->
+        <link rel="stylesheet" type="text/css"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="src/styles/styles.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../assets/styles/styles.css">
+
+    </head>
+
+    <body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/pngwing.com.png" alt="" class="small-image">
+                <h1>RE-GRILL</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about-us" aria-label="Go to About Us section">About Us</a></li>
+                    <li><a href="#features" aria-label="Go to Features section">Features</a></li>
+                    <li><a href="#plans" aria-label="Go to Plans section">Plans</a></li>
+                    <li><a href="#benefits" aria-label="Go to Benefits section">Benefits</a></li>
+                    <li><a href="#qa" aria-label="Go to Q&A section">Q&A</a></li>
+                    <li><a href="#contact" aria-label="Go to Contact Us section">Contact Us</a></li>
+                    <li><router-link to="/login" aria-label="LogIn redirect">Log In</router-link></li>
+                </ul>
+                <div class="language-switch">
+                    <button onclick="window.location.href='./pages/index-es.html'"
+                            aria-label="Switch to Spanish">ES</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h2>Optimize Your Restaurant Operations with Re-Grill</h2>
+                <p>Revolutionize the way you manage your restaurant with our all-in-one platform.</p>
+                <router-link to="/register" class="cta-button" aria-label="Request a Demo">Request a Demo</router-link>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us">
+            <div class="about-us-container">
+                <h2>About Us</h2>
+                <p class="about-us-description">
+                    We are a company dedicated to providing innovative and sustainable solutions. Our team consists of
+                    passionate professionals committed to excellence.
+                </p>
+                <div class="about-us-values">
+                    <h3>Our Values</h3>
+                    <ul>
+                        <li>Innovation: We are always looking for new ways to improve and grow.</li>
+                        <li>Integrity: We believe in doing the right thing, always.</li>
+                        <li>Commitment: We are dedicated to the success of our customers and our community.</li>
+                    </ul>
+                </div>
+                <div class="about-us-video">
+                    <h3>Learn More About The Product</h3>
+                    <iframe src="https://www.youtube.com/embed/yJO49-8k9BI?si=lTZfrLgh8aNDqXHg"
+                            width="560" height="315" allow="autoplay; encrypted-media" allowfullscreen
+                            aria-label="Watch the About The Team Video">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="feature">
+            <div class="">
+                <h3>Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <h4>Real-Time Reservation Management</h4>
+                        <p>Manage reservations effortlessly with real-time updates and automated scheduling, ensuring
+                            optimal seating and minimizing wait times.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Inventory and Stock Control</h4>
+                        <p>Track your inventory in real-time, manage stock levels, and receive alerts for low stock,
+                            helping to avoid shortages and reduce waste.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Automated Ordering and Billing</h4>
+                        <p>Streamline your ordering process with automated billing and order management, reducing errors
+                            and improving efficiency.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Integrated Supplier Management</h4>
+                        <p>Coordinate with suppliers directly through the platform, manage orders, and ensure a steady
+                            supply of fresh ingredients.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Comprehensive Analytics</h4>
+                        <p>Gain insights into your restaurant's performance with detailed analytics and reporting,
+                            enabling data-driven decision making.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans">
+            <div class="">
+                <h3>Choose one of our plans</h3>
+                <div class="plans-container">
+                    <!-- Plan 1: Monthly -->
+                    <div class="plan">
+                        <h4>Monthly</h4>
+                        <p>S/39.90</p>
+                        <a href="#" class="cta-button" aria-label="Buy Monthly Plan">Buy now</a>
+                    </div>
+
+                    <!-- Plan 2: Quarterly -->
+                    <div class="plan">
+                        <h4>Quarterly</h4>
+                        <p>S/99.90</p>
+                        <p>Save S/18.90*</p>
+                        <a href="#" class="cta-button" aria-label="Buy Quarterly Plan">Buy now</a>
+                    </div>
+
+                    <!-- Plan 3: Annual -->
+                    <div class="plan">
+                        <h4>Annual</h4>
+                        <p>S/389.90</p>
+                        <p>Save S/79.90*</p>
+                        <a href="#" class="cta-button" aria-label="Buy Annual Plan">Buy now</a>
+                    </div>
+                </div>
+                <p class="terms">*Terms & Conditions apply</p>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="benefits">
+            <div class="benefits-container">
+                <h2>Benefits</h2>
+                <p class="benefits-description">
+                    Our services provide numerous benefits to enhance your experience and ensure satisfaction.
+                </p>
+                <ul class="benefits-list">
+                    <li>High Quality: We deliver top-notch services and products.</li>
+                    <li>Customer Support: 24/7 customer support for all your needs.</li>
+                    <li>Affordable Prices: Competitive pricing without compromising quality.</li>
+                    <li>Flexibility: Customizable options to suit your preferences.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Q&A Section -->
+        <section id="qa">
+            <div class="qa-container">
+                <h2>Q&A</h2>
+                <div class="qa-item">
+                    <h3>What services do you offer?</h3>
+                    <p>We offer a range of services including consulting, development, and support for various business
+                        needs.</p>
+                </div>
+                <div class="qa-item">
+                    <h3>How can I contact customer support?</h3>
+                    <p>You can reach our customer support team 24/7 via email, phone, or live chat.</p>
+                </div>
+                <div class="qa-item">
+                    <h3>What are your pricing plans?</h3>
+                    <p>We offer flexible pricing plans tailored to different requirements. Contact us for a detailed
+                        quote.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact">
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="contact-form-group">
+                        <label for="nombre">Name:</label>
+                        <input type="text" id="nombre" name="nombre" class="contact-form-input" required>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="contact-form-input" required>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="mensaje">Message:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="contact-form-textarea"
+                                  required></textarea>
+                    </div>
+                    <button type="submit" class="contact-form-button" aria-label="Submit Contact Form">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer p">
+            <p>Follow us on social media</p>
+        </div>
+
+        <div class="footer-socials">
+            <p>
+                <a href="#" aria-label="Visit Facebook page"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Visit Twitter page"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Visit Instagram page"><i class="fab fa-instagram"></i></a>
+            </p>
+
+        </div>
+
+        <div class="footer p">
+            <p>© 2024 Re-Grill. All rights reserved.</p>
+        </div>
+    </footer>
+    </body>
+    </div>
+
+</template>
+
+<style scoped>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', 'Varela Round', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+header {
+    background-color: #ff7300;
+    /* Azul oscuro */
+    color: #fff;
+    padding: 15px 0;
+    margin-bottom: 0px;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+
+    padding: 20px;
+    /* Azul muy claro (casi blanco) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente la imagen y el texto */
+}
+
+.logo img {
+    margin-right: 10px;
+    /* Espacio entre la imagen y el texto */
+    width: 50px;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.language-switch button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.language-switch button:hover {
+    background-color: #f1842a;
+    /* Azul claro para el hover */
+
+
+}
+
+.small-image {
+    width: 100px;
+    /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+/* HERO*/
+/* HERO*/
+/* HERO*/
+
+.hero {
+    background-image: url('../assets/images/45.jpg');
+    background-size: cover;
+
+    background-position: bottom right;
+
+    /* Azul oscuro para el fondo del hero */
+    color: #fffbfb;
+    text-align: left;
+    padding: 100px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    margin-right: 700px;
+    padding: 2%;
+    padding-right: 10%;
+}
+
+.cta-button {
+    background-color: #ff7300;
+    /* Azul claro para el botón */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #ff7300;
+
+}
+
+/* ABOUT US*/
+/* ABOUT US*/
+/* ABOUT US*/
+
+
+.about-us-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    /* Maximum width for better readability */
+    width: 80%;
+    /* Flexible width for different screen sizes */
+    margin: auto;
+    /* Center horizontally */
+}
+
+.about-us-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.about-us-values {
+    text-align: left;
+    /* Align text to the left for better readability */
+}
+
+.about-us-values h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-us-values ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-us-values li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* BENEFITS */
+/* BENEFITS */
+/* BENEFITS */
+
+.benefits {
+    background-image: url(../assets/images/BenefitsBG.jpg);
+}
+
+.benefits-container,
+.qa-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    /* Ancho máximo para mejor legibilidad */
+    width: 80%;
+    /* Ancho flexible para diferentes tamaños de pantalla */
+    margin: 20px auto;
+    /* Centra horizontalmente y agrega margen entre secciones */
+}
+
+.benefits-container h2,
+.qa-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.benefits-description,
+.qa-item p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.benefits-list {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    /* Alinea la lista a la izquierda */
+    margin-left: 20px;
+    /* Agrega margen izquierdo para la lista */
+}
+
+.benefits-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Q&A */
+/* Q&A */
+/* Q&A */
+
+.qa-item {
+    margin-bottom: 20px;
+    text-align: left;
+    /* Alinea preguntas y respuestas a la izquierda */
+}
+
+.qa-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.qa-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* CONTACT US */
+/* CONTACT US */
+/* CONTACT US */
+
+.contact {
+    background-image: url(../assets/images/ContactBG.jpg);
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    /* Aumenta el padding para más espacio interno */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    /* Aumenta el ancho del formulario */
+    text-align: center;
+    margin: auto;
+    /* Agrega un margen para evitar que toque los bordes en pantallas pequeñas */
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    /* Tamaño de fuente más grande para el título */
+}
+
+.contact-form-group {
+    margin-bottom: 20px;
+    /* Aumenta el margen inferior entre los campos */
+    text-align: left;
+}
+
+.contact-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    /* Espaciado más consistente */
+    font-weight: bold;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+    width: 100%;
+    padding: 10px;
+    /* Aumenta el padding para mejorar la usabilidad */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* Tamaño de fuente más grande para mejor legibilidad */
+}
+
+.contact-form-button {
+    background-color: #ff7300;
+    color: white;
+    padding: 12px 20px;
+    /* Aumenta el padding para un botón más grande */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    /* Tamaño de fuente más grande para el botón */
+}
+
+.contact-form-button:hover {
+    background-color: #ee6b00;
+}
+
+/* PLANS */
+/* PLANS */
+/* PLANS */
+#plans {
+    padding: 40px 0;
+    background-color: #fff;
+    /* Fondo negro */
+    text-align: center;
+    color: #004080;
+    /* Texto blanco */
+}
+
+#plans h3 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.plan {
+    background-color: #fff;
+    /* Fondo blanco para las tarjetas */
+    color: #333;
+    /* Color del texto */
+    border: 2px solid #ff7300;
+    /* Borde naranja */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.plan p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.terms {
+    font-size: 0.8em;
+    color: #000;
+    /* Texto de los términos en blanco */
+    margin-top: 20px;
+}
+
+/* FEATURES */
+/* FEATURES */
+
+
+.feature {
+    background-image: url(../assets/images/FeaturesBG.jpg);
+}
+
+#features {
+    padding: 60px 0;
+    background-color: #f0f8ff;
+    /* Azul muy claro para el fondo */
+    text-align: center;
+}
+
+#features .container {
+    text-align: center;
+}
+
+#features h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #f0f8ff;
+    /* Azul oscuro para el título */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    border: 2px solid #ff7300;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    /* Levanta el cuadro al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box h4 {
+    font-size: 1.5em;
+    color: #333;
+    /* Azul claro para los títulos de las características */
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+
+footer {
+    background-color: #ff7300;
+    /* Azul oscuro */
+    color: #fff;
+
+    text-align: center;
+    padding: 1px 0;
+    margin-top: 0px;
+}
+
+footer p {
+    margin: 20px 0;
+    text-align: center;
+
+
+}
+
+footer footer-socials {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    margin-left: 10px;
+
+}
+
+footer .fab {
+    color: #fff;
+    font-size: large;
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 40px;
+        /* Adjust logo size for small screens */
+    }
+
+    .hero-content {
+        margin-right: 0;
+        padding: 10%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+    }
+
+    .about-us-container,
+    .benefits-container,
+    .qa-container,
+    .contact-form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 80%;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        margin-right: 100px;
+        padding: 5%;
+    }
+
+    .plans-container {
+        flex-wrap: wrap;
+    }
+
+    .plan {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-us-container,
+    .benefits-container,
+    .qa-container,
+    .contact-form-container {
+        width: 90%;
+    }
+}
+</style>

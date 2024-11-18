@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Grill - Optimize Your Restaurant Operations</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', 'Varela Round', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/pngwing.com.png" alt="" class="small-image">
+                <h1>RE-GRILL</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about-us" aria-label="Go to About Us section">About Us</a></li>
+                    <li><a href="#features" aria-label="Go to Features section">Features</a></li>
+                    <li><a href="#plans" aria-label="Go to Plans section">Plans</a></li>
+                    <li><a href="#benefits" aria-label="Go to Benefits section">Benefits</a></li>
+                    <li><a href="#qa" aria-label="Go to Q&A section">Q&A</a></li>
+                    <li><a href="#contact" aria-label="Go to Contact Us section">Contact Us</a></li>
+                    <li><router-link to="/login" aria-label="LogIn redirect">Log In</router-link></li>
+                </ul>
+                <div class="language-switch">
+                    <button onclick="window.location.href='./pages/index-es.html'"
+                        aria-label="Switch to Spanish">ES</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h2>Optimize Your Restaurant Operations with Re-Grill</h2>
+                <p>Revolutionize the way you manage your restaurant with our all-in-one platform.</p>
+                <router-link to="/register" class="cta-button" aria-label="Request a Demo">Request a Demo</router-link>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us">
+            <div class="about-us-container">
+                <h2>About Us</h2>
+                <p class="about-us-description">
+                    We are a company dedicated to providing innovative and sustainable solutions. Our team consists of
+                    passionate professionals committed to excellence.
+                </p>
+                <div class="about-us-values">
+                    <h3>Our Values</h3>
+                    <ul>
+                        <li>Innovation: We are always looking for new ways to improve and grow.</li>
+                        <li>Integrity: We believe in doing the right thing, always.</li>
+                        <li>Commitment: We are dedicated to the success of our customers and our community.</li>
+                    </ul>
+                </div>
+                <div class="about-us-video">
+                    <h3>Learn More About The Product</h3>
+                    <iframe src="https://www.youtube.com/embed/yJO49-8k9BI?si=lTZfrLgh8aNDqXHg"
+                            width="560" height="315" allow="autoplay; encrypted-media" allowfullscreen
+                            aria-label="Watch the About The Team Video">
+                </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="feature">
+            <div class="">
+                <h3>Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <h4>Real-Time Reservation Management</h4>
+                        <p>Manage reservations effortlessly with real-time updates and automated scheduling, ensuring
+                            optimal seating and minimizing wait times.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Inventory and Stock Control</h4>
+                        <p>Track your inventory in real-time, manage stock levels, and receive alerts for low stock,
+                            helping to avoid shortages and reduce waste.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Automated Ordering and Billing</h4>
+                        <p>Streamline your ordering process with automated billing and order management, reducing errors
+                            and improving efficiency.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Integrated Supplier Management</h4>
+                        <p>Coordinate with suppliers directly through the platform, manage orders, and ensure a steady
+                            supply of fresh ingredients.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Comprehensive Analytics</h4>
+                        <p>Gain insights into your restaurant's performance with detailed analytics and reporting,
+                            enabling data-driven decision making.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans">
+            <div class="">
+                <h3>Choose one of our plans</h3>
+                <div class="plans-container">
+                    <!-- Plan 1: Monthly -->
+                    <div class="plan">
+                        <h4>Monthly</h4>
+                        <p>S/39.90</p>
+                        <a href="#" class="cta-button" aria-label="Buy Monthly Plan">Buy now</a>
+                    </div>
+
+                    <!-- Plan 2: Quarterly -->
+                    <div class="plan">
+                        <h4>Quarterly</h4>
+                        <p>S/99.90</p>
+                        <p>Save S/18.90*</p>
+                        <a href="#" class="cta-button" aria-label="Buy Quarterly Plan">Buy now</a>
+                    </div>
+
+                    <!-- Plan 3: Annual -->
+                    <div class="plan">
+                        <h4>Annual</h4>
+                        <p>S/389.90</p>
+                        <p>Save S/79.90*</p>
+                        <a href="#" class="cta-button" aria-label="Buy Annual Plan">Buy now</a>
+                    </div>
+                </div>
+                <p class="terms">*Terms & Conditions apply</p>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="benefits">
+            <div class="benefits-container">
+                <h2>Benefits</h2>
+                <p class="benefits-description">
+                    Our services provide numerous benefits to enhance your experience and ensure satisfaction.
+                </p>
+                <ul class="benefits-list">
+                    <li>High Quality: We deliver top-notch services and products.</li>
+                    <li>Customer Support: 24/7 customer support for all your needs.</li>
+                    <li>Affordable Prices: Competitive pricing without compromising quality.</li>
+                    <li>Flexibility: Customizable options to suit your preferences.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Q&A Section -->
+        <section id="qa">
+            <div class="qa-container">
+                <h2>Q&A</h2>
+                <div class="qa-item">
+                    <h3>What services do you offer?</h3>
+                    <p>We offer a range of services including consulting, development, and support for various business
+                        needs.</p>
+                </div>
+                <div class="qa-item">
+                    <h3>How can I contact customer support?</h3>
+                    <p>You can reach our customer support team 24/7 via email, phone, or live chat.</p>
+                </div>
+                <div class="qa-item">
+                    <h3>What are your pricing plans?</h3>
+                    <p>We offer flexible pricing plans tailored to different requirements. Contact us for a detailed
+                        quote.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact">
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="contact-form-group">
+                        <label for="nombre">Name:</label>
+                        <input type="text" id="nombre" name="nombre" class="contact-form-input" required>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="contact-form-input" required>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="mensaje">Message:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="contact-form-textarea"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="contact-form-button" aria-label="Submit Contact Form">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer p">
+            <p>Follow us on social media</p>
+        </div>
+
+        <div class="footer-socials">
+            <p>
+                <a href="#" aria-label="Visit Facebook page"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Visit Twitter page"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Visit Instagram page"><i class="fab fa-instagram"></i></a>
+            </p>
+
+        </div>
+
+        <div class="footer p">
+            <p>© 2024 Re-Grill. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

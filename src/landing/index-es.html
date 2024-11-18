@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ICONOS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="src/styles/styles.css">
+<!-- Tipo de letra -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Grill - Optimiza las Operaciones de tu Restaurante</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', 'Varela Round', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sección del Encabezado -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/pngwing.com.png" alt="" class="small-image">
+                <h1>RE-GRILL</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about-us" aria-label="Ir a la sección Sobre Nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#features" aria-label="Ir a la sección Características">Características</a></li>
+                    <li><a href="#plans" aria-label="Ir a la sección Planes">Planes</a></li>
+                    <li><a href="#benefits" aria-label="Ir a la sección Beneficios">Beneficios</a></li>
+                    <li><a href="#qa" aria-label="Ir a la sección Preguntas y Respuestas">FAQ</a></li>
+                    <li><a href="#contact" aria-label="Ir a la sección Contáctanos">Contáctanos</a></li>
+                    <li><router-link to="/login" aria-label="Ir a la pantalla inicio de sesión">Iniciar Sesión</router-link></li>
+                </ul>
+                <div class="language-switch">
+                    <button onclick="window.location.href='../index.html'" aria-label="Cambiar a Inglés">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Sección Principal -->
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h2>Optimiza las Operaciones de tu Restaurante con Re-Grill</h2>
+                <p>Revoluciona la forma en que gestionas tu restaurante con nuestra plataforma todo en uno.</p>
+                <router-link to="/register" class="cta-button" aria-label="Solicita una Demo">Solicita una Demo</router-link>
+            </div>
+        </section>
+
+         <!-- Sección Sobre Nosotros -->
+         <section id="about-us">
+            <div class="about-us-container">
+                <h2>Sobre Nosotros</h2>
+                <p class="about-us-description">
+                    Somos una empresa dedicada a proporcionar soluciones innovadoras y sostenibles. Nuestro equipo está
+                    formado por profesionales apasionados y comprometidos con la excelencia.
+                </p>
+                <div class="about-us-values">
+                    <h3>Nuestros Valores</h3>
+                    <ul>
+                        <li>Innovación: Siempre buscamos nuevas formas de mejorar y crecer.</li>
+                        <li>Integridad: Creemos en hacer lo correcto, siempre.</li>
+                        <li>Compromiso: Estamos dedicados al éxito de nuestros clientes y nuestra comunidad.</li>
+                    </ul>
+                </div>
+                <div class="about-us-video">
+                    <h3>Más Información sobre el Producto</h3>
+                    <iframe src="https://www.youtube.com/embed/yJO49-8k9BI?si=lTZfrLgh8aNDqXHg"
+                            width="560" height="315" allow="autoplay; encrypted-media" allowfullscreen
+                            aria-label="Mira el video Acerca del Producto">
+                </iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Características -->
+        <section id="features" class="feature">
+            <div class="">
+                <h3>Características</h3>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <h4>Gestión de Reservas en Tiempo Real</h4>
+                        <p>Gestiona reservas sin esfuerzo con actualizaciones en tiempo real y programación
+                            automatizada, asegurando una óptima distribución de asientos y minimizando tiempos de
+                            espera.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Control de Inventario y Stock</h4>
+                        <p>Controla tu inventario en tiempo real, gestiona los niveles de stock y recibe alertas de bajo
+                            stock, ayudando a evitar escasez y reducir el desperdicio.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Pedidos y Facturación Automatizados</h4>
+                        <p>Simplifica tu proceso de pedidos con facturación y gestión de pedidos automatizados,
+                            reduciendo errores y mejorando la eficiencia.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Gestión Integrada de Proveedores</h4>
+                        <p>Coordina con los proveedores directamente a través de la plataforma, gestiona pedidos y
+                            asegura un suministro constante de ingredientes frescos.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Análisis Comprensivos</h4>
+                        <p>Obtén información sobre el rendimiento de tu restaurante con análisis detallados e informes,
+                            permitiendo la toma de decisiones basada en datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!-- Sección de Planes -->
+    <section id="plans">
+        <div class="">
+            <h3>Elige uno de nuestros planes</h3>
+            <div class="plans-container">
+                <!-- Plan 1: Mensual -->
+                <div class="plan">
+                    <h4>Mensual</h4>
+                    <p>S/39.90</p>
+                    <a href="#" class="cta-button" aria-label="Comprar plan mensual">Comprar ahora</a>
+                </div>
+
+                <!-- Plan 2: Trimestral -->
+                <div class="plan">
+                    <h4>Trimestral</h4>
+                    <p>S/99.90</p>
+                    <p>Ahorra S/18.90*</p>
+                    <a href="#" class="cta-button" aria-label="Comprar plan trimestral">Comprar ahora</a>
+                </div>
+
+                <!-- Plan 3: Anual -->
+                <div class="plan">
+                    <h4>Anual</h4>
+                    <p>S/389.90</p>
+                    <p>Ahorra S/79.90*</p>
+                    <a href="#" class="cta-button" aria-label="Comprar plan anual">Comprar ahora</a>
+                </div>
+            </div>
+            <p class="terms">*Aplican Términos y Condiciones</p>
+        </div>
+
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section id="benefits" class="benefits">
+        <div class="benefits-container">
+            <h2>Beneficios</h2>
+            <p class="benefits-description">
+                Nuestros servicios ofrecen numerosos beneficios para mejorar tu experiencia y garantizar la
+                satisfacción.
+            </p>
+            <ul class="benefits-list">
+                <li>Alta Calidad: Ofrecemos servicios y productos de primera categoría.</li>
+                <li>Soporte al Cliente: Soporte al cliente 24/7 para todas tus necesidades.</li>
+                <li>Precios Asequibles: Precios competitivos sin comprometer la calidad.</li>
+                <li>Flexibilidad: Opciones personalizables para adaptarse a tus preferencias.</li>
+            </ul>
+        </div>
+    </section>
+       <!-- Sección de Preguntas y Respuestas -->
+       <section id="qa">
+        <div class="qa-container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="qa-item">
+                <h3>¿Qué servicios ofrecen?</h3>
+                <p>Ofrecemos una gama de servicios que incluyen consultoría, desarrollo y soporte para diversas
+                    necesidades empresariales.</p>
+            </div>
+            <div class="qa-item">
+                <h3>¿Cómo puedo contactar con el soporte al cliente?</h3>
+                <p>Puedes contactar a nuestro equipo de soporte al cliente 24/7 por correo electrónico, teléfono o
+                    chat en vivo.</p>
+            </div>
+            <div class="qa-item">
+                <h3>¿Cuáles son sus planes de precios?</h3>
+                <p>Ofrecemos planes de precios flexibles adaptados a diferentes necesidades. Contáctanos para una
+                    cotización detallada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact">
+        <div class="contact-form-container">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post">
+                <div class="contact-form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="contact-form-input" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="contact-form-input" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="contact-form-textarea"
+                        required></textarea>
+                </div>
+                <button type="submit" class="contact-form-button"
+                    aria-label="Enviar formulario de contacto">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+    <!-- Sección del Pie de Página -->
+    <footer>
+        <div class="footer p">
+            <p>Síguenos en redes sociales</p>
+        </div>
+
+        <div class="footer-socials">
+            <p>
+                <a href="#" aria-label="Visitar página de Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Visitar página de Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Visitar página de Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+
+        <div class="footer p">
+            <p>© 2024 Re-Grill. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
