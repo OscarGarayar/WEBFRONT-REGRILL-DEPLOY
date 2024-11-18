@@ -10,8 +10,7 @@ const router = createRouter({
             children: [
                 {
                     path: '/',
-                    name: 'dashboard',
-                    component: () => import('@/public/views/Dashboard.vue')
+                    redirect: '/landing'
                 },
                 {
                     path: '/supplier/orderlist',
@@ -27,6 +26,36 @@ const router = createRouter({
                     path: '/supplier/profile',
                     name: 'profile',
                     component: () => import('@/suppliers/user-management/profile/views/SupplierProfile.vue')
+                },
+                {
+                    path: '/recipe',
+                    name: 'recipe',
+                    component: () => import('@/administrator/recipes/views/recipe-grid.component.vue')
+                },
+                {
+                    path: '/recipe/recipeAdd',
+                    name: 'RecipeAdd',
+                    component: () => import('@/administrator/recipes/views/recipe-add.component.vue')
+                },
+                {
+                    path: '/recipe/viewRecipe',
+                    name: 'ViewRecipe',
+                    component: () => import('@/administrator/recipes/views/view-recipe.component.vue')
+                },
+                {
+                    path: '/orders',
+                    name: 'Orders',
+                    component: () => import('@/administrator/orders/views/order-view.component.vue')
+                },
+                {
+                    path: '/orders/updateOrder',
+                    name: 'UpdateOrder',
+                    component: () => import('@/administrator/orders/views/order-update.component.vue')
+                },
+                {
+                    path: '/orders/addOrder',
+                    name: 'OrderAdd',
+                    component: () => import('@/administrator/orders/views/order-add.component.vue')
                 },
                 {
                     path: '/uikit/formlayout',
@@ -119,7 +148,7 @@ const router = createRouter({
         {
             path: '/landing',
             name: 'landing',
-            component: () => import('@/views/pages/Landing.vue')
+            component: () => import('@/landing/landing.component.vue')
         },
         {
             path: '/pages/notfound',
