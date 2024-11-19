@@ -155,7 +155,17 @@ const router = createRouter({
             name: 'notfound',
             component: () => import('@/views/pages/NotFound.vue')
         },
+        {
+            path: '/login',
+            name: 'login',
+            component: () => import('@/views/pages/login.component.vue')
+        },
 
+        {
+            path: '/register',
+            name: 'register',
+            component: () => import('@/views/pages/register.component.vue')
+        },
         {
             path: '/auth/login',
             name: 'login',
