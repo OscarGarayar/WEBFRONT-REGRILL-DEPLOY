@@ -13,6 +13,11 @@ const router = createRouter({
                     redirect: '/landing'
                 },
                 {
+                    path: '/supplier/dashboard',
+                    name: 'dashboard',
+                    component: () => import('@/public/views/Dashboard.vue')
+                },
+                {
                     path: '/supplier/orderlist',
                     name: 'orderlist',
                     component: () => import('@/suppliers/order-management/order-list/views/OrderList.vue')
