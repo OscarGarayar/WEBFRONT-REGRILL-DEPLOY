@@ -83,6 +83,12 @@ export default {
                 <span class="spacer"></span>
                 <router-link to="/login" class="logIn">Log In</router-link>
             </div>
+            <div class="have-account">
+                <router-link to="/supplier/dashboard" class="logIn">
+                    <label for="question">Click here to go to Dashboard</label>
+                </router-link>
+
+            </div>
         </div>
     </div>
 </template>

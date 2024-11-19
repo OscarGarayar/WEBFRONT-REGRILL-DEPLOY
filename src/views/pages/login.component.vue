@@ -62,6 +62,12 @@ export default {
                 <div class="signup-link">
                     <span>New to Re-grill? <router-link to="/register" class="register">Create an account</router-link></span>
                 </div>
+                <div class="have-account">
+                    <router-link to="/supplier/dashboard" class="logIn">
+                        <label for="question">Click here to go to Dashboard</label>
+                    </router-link>
+
+                </div>
             </div>
         </div>
     </div>
@@ -89,7 +95,11 @@ export default {
     max-width: 400px;
     width: 100%;
 }
-
+.have-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .login-header {
     text-align: left;
     font-size: 24px;

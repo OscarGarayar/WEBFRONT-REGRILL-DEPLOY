@@ -1,12 +1,12 @@
 {
     "Suppliers": [
         {
-            "id": 1,
+            "id": "1",
             "name": "ABC Supplies",
             "address": "123 Industrial Road, Cityville",
             "email": "contact@abcsupplies.com",
             "phoneNumber": "123-456-7890",
-            "contactPerson": "John Doe",
+            "contactPerson": "John Doe 2",
             "description": "Leading supplier of industrial tools and machinery.",
             "businessType": "Manufacturing",
             "ordersFinished": 10,
@@ -15,7 +15,7 @@
     ],
     "SupplierOrder": [
         {
-            "id": 1,
+            "id": "1",
             "supplierId": 1,
             "orderDate": "2024-09-01",
             "deliveryDate": "2024-09-05",
@@ -36,7 +36,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": "2",
             "supplierId": 2,
             "orderDate": "2024-09-02",
             "deliveryDate": "2024-09-06",
@@ -55,12 +55,11 @@
                     "price": "S/. 70"
                 }
             ]
-
         }
     ],
     "Notifications": [
         {
-            "id": 1,
+            "id": "1",
             "userId": 101,
             "message": "Your order #5001 has been shipped.",
             "type": "order",
@@ -68,7 +67,7 @@
             "createdAt": "2023-09-28T10:30:00Z"
         },
         {
-            "id": 2,
+            "id": "2",
             "userId": 102,
             "message": "Payment for invoice #2345 has been received.",
             "type": "payment",
@@ -76,7 +75,7 @@
             "createdAt": "2023-09-27T12:45:00Z"
         },
         {
-            "id": 3,
+            "id": "3",
             "userId": 103,
             "message": "Your account has been updated successfully.",
             "type": "info",
@@ -84,7 +83,7 @@
             "createdAt": "2023-09-26T08:00:00Z"
         },
         {
-            "id": 4,
+            "id": "4",
             "userId": 101,
             "message": "Reminder: Your order #5002 will be delivered tomorrow.",
             "type": "reminder",
@@ -92,12 +91,266 @@
             "createdAt": "2023-09-27T18:00:00Z"
         },
         {
-            "id": 5,
+            "id": "5",
             "userId": 104,
             "message": "Your password has been changed.",
             "type": "security",
             "isRead": true,
             "createdAt": "2023-09-25T15:20:00Z"
+        }
+    ],
+    "AdminStock": [
+        {
+            "id": "1",
+            "date": "2024-09-02",
+            "ingredient": "Rice",
+            "quantity": "2kg",
+            "supplier": "Rodrigo"
+        },
+        {
+            "id": "2",
+            "date": "2024-09-02",
+            "ingredient": "Rice",
+            "quantity": "2kg",
+            "supplier": "Rodrigo"
+        },
+        {
+            "id": "3",
+            "date": "2024-09-02",
+            "ingredient": "Rice",
+            "quantity": "2kg",
+            "supplier": "Rodrigo"
+        },
+        {
+            "id": "4",
+            "date": "2024-09-02",
+            "ingredient": "Rice",
+            "quantity": "2kg",
+            "supplier": "Rodrigo"
+        },
+        {
+            "id": "5",
+            "date": "2024-09-02",
+            "ingredient": "Rice",
+            "quantity": "2kg",
+            "supplier": "Rodrigo"
+        }
+    ],
+    "invoices": [
+        {
+            "id": "1",
+            "invoiceNumber": "F001-000001",
+            "date": "2024-10-27",
+            "client": "Juan Pérez",
+            "total": 150.75,
+            "status": "Paid"
+        },
+        {
+            "id": "2",
+            "invoiceNumber": "F001-000002",
+            "date": "2024-10-26",
+            "client": "María López",
+            "total": 275.5,
+            "status": "Pending"
+        },
+        {
+            "id": "3",
+            "invoiceNumber": "F001-000003",
+            "date": "2024-10-25",
+            "client": "Carlos Sánchez",
+            "total": 180,
+            "status": "Cancelled"
+        },
+        {
+            "id": "4",
+            "invoiceNumber": "F001-000004",
+            "date": "2024-10-24",
+            "client": "Lucía Rodríguez",
+            "total": 320.25,
+            "status": "Paid"
+        },
+        {
+            "id": "5",
+            "invoiceNumber": "F001-000005",
+            "date": "2024-10-23",
+            "client": "Pedro Gómez",
+            "total": 120,
+            "status": "Pending"
+        },
+        {
+            "id": "6",
+            "invoiceNumber": "F001-831439",
+            "date": "2024-10-27",
+            "client": "Jamir Marzál",
+            "total": 234,
+            "status": "paid"
+        },
+        {
+            "id": "7",
+            "invoiceNumber": "F001-650650",
+            "date": "2024-10-27",
+            "client": "Andrew ",
+            "total": 87,
+            "status": "paid"
+        },
+        {
+            "id": "8",
+            "invoiceNumber": "F001-116444",
+            "date": "2024-10-27",
+            "client": "Carlos",
+            "total": 23,
+            "status": "pending"
+        },
+        {
+            "id": "9",
+            "invoiceNumber": "F001-414357",
+            "date": "2024-10-28",
+            "client": "Jose",
+            "total": 23,
+            "status": "paid"
+        },
+        {
+            "id": "0",
+            "invoiceNumber": "F001-431324",
+            "date": "2024-11-05",
+            "client": "q",
+            "total": 12,
+            "status": "paid"
+        },
+        {
+            "id": "0",
+            "invoiceNumber": "F001-460353",
+            "date": "2024-11-05",
+            "client": "asf",
+            "total": 2112,
+            "status": "pending"
+        }
+    ],
+    "recipes": [
+        {
+            "id": "1",
+            "name": "Octopus and Shrimp Ceviche with Yellow Chili Tiger's Milk",
+            "category": "Appetizers",
+            "description": "A fresh ceviche with octopus and shrimp, served with a creamy and spicy tiger's milk.",
+            "ingredients": [
+                {
+                    "name": "Octopus",
+                    "quantity": "200 grams",
+                    "cost": 10
+                },
+                {
+                    "name": "Shrimp",
+                    "quantity": "100 grams",
+                    "cost": 7
+                },
+                {
+                    "name": "Yellow Chili",
+                    "quantity": "2 units",
+                    "cost": 1
+                }
+            ],
+            "image": "https://casualepicure.com/wp-content/uploads/2023/07/octopus-ceviche-11.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Carnitas Tacos",
+            "category": "Fast Food",
+            "description": "Traditional Mexican tacos with slow-cooked pork.",
+            "ingredients": [
+                {
+                    "name": "Tortillas",
+                    "quantity": "10 units",
+                    "cost": 2
+                },
+                {
+                    "name": "Pork",
+                    "quantity": "300 grams",
+                    "cost": 5
+                },
+                {
+                    "name": "Cilantro",
+                    "quantity": "50 grams",
+                    "cost": 0.5
+                }
+            ],
+            "image": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/04/Carnitas-Tacos-main.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Tomato Soup",
+            "category": "Soups",
+            "description": "A creamy and comforting soup made with fresh tomatoes and basil.",
+            "ingredients": [
+                {
+                    "name": "Tomatoes",
+                    "quantity": "4 units",
+                    "cost": 3
+                },
+                {
+                    "name": "Basil",
+                    "quantity": "20 grams",
+                    "cost": 1
+                },
+                {
+                    "name": "Cream",
+                    "quantity": "100 ml",
+                    "cost": 2
+                }
+            ],
+            "image": "https://cdn.loveandlemons.com/wp-content/uploads/2023/01/tomato-soup-recipe.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Chocolate Brownies",
+            "category": "Desserts",
+            "description": "Sweet and fluffy brownies made with dark chocolate and walnuts.",
+            "ingredients": [
+                {
+                    "name": "Dark Chocolate",
+                    "quantity": "200 grams",
+                    "cost": 4
+                },
+                {
+                    "name": "Flour",
+                    "quantity": "150 grams",
+                    "cost": 1
+                },
+                {
+                    "name": "Walnuts",
+                    "quantity": "50 grams",
+                    "cost": 2
+                }
+            ],
+            "image": "https://img.taste.com.au/kdMbjArS/taste/2010/01/chocolate-brownies-118925-2.jpg"
+        }
+    ],
+    "orders": [
+        {
+            "id": "1",
+            "cash": 1,
+            "name": "Lemonade",
+            "table": 2,
+            "time": "11:53",
+            "status": "In preparation",
+            "quantity": 2
+        },
+        {
+            "id": "2",
+            "cash": 2,
+            "name": "Burger",
+            "table": 5,
+            "time": "12:30",
+            "status": "Ready",
+            "quantity": 1
+        },
+        {
+            "id": "3",
+            "cash": 3,
+            "name": "Mostro",
+            "table": 4,
+            "time": "10:10",
+            "status": "In preparation",
+            "quantity": 4
         }
     ]
 }
