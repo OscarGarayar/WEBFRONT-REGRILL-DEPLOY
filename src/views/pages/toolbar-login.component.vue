@@ -1,4 +1,5 @@
 <script>
+
 export default {
     name: 'toolbar-login'
 }
@@ -6,7 +7,7 @@ export default {
 
 <template>
     <div class="toolbar-content-container" style="background-color: #004080">
-        <pv-toolbar class="toolbar-container">
+        <toolbar class="toolbar-container">
             <template #start>
                 <div class="toolbar-content">
                     <router-link to="/supplier/dashboard" class="home">
@@ -16,7 +17,7 @@ export default {
                     </router-link>
                 </div>
             </template>
-        </pv-toolbar>
+        </toolbar>
     </div>
 </template>
 
