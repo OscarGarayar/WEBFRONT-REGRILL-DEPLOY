@@ -4,7 +4,7 @@ import { AdminStock } from '@/managers/stocks-management/stock-list/model/admin-
 
 export class AdminStockApiService{
     async getAdminStock(){
-        const url = 'http://localhost:3000/AdminStock'
+        const url = 'http://localhost:5086/api/v1/adminstock'
         const response = await axios.get(url);
         return response.data.map(adminStockData =>{
             return new AdminStock({
