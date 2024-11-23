@@ -83,7 +83,18 @@ export default {
                     <h3>Learn More About The Product</h3>
                     <iframe src="https://www.youtube.com/embed/9O_gL2Lbk3M?si=rz_hogpX71ht_oRr "
                             width="560" height="315" allow="autoplay; encrypted-media" allowfullscreen
-                            aria-label="Watch the About The Team Video">
+                            aria-label="Watch the About The Product Video">
+                    </iframe>
+                </div>
+                <div class="about-us-video">
+                    <h3>About the Team</h3>
+                    <iframe
+                        src="https://www.youtube.com/embed/QrFBBWaqwnc"
+                        width="560"
+                        height="315"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        aria-label="Watch the About The Team Video">
                     </iframe>
                 </div>
             </div>
