@@ -1,4 +1,4 @@
-import http from 'src/shared/http-common.js';
+import http from '/src/shared/http-common';
 
 export class RecipeApiService {
     getAll() {
