@@ -1,4 +1,4 @@
-import http from '../../../shared/http-common'
+import http from '../../../../../Cambios para manager-stock, orders, http-common/WEBFRONT-REGRILL-DEPLOY/src/shared/http-common'
 
 export class OrdersApiService {
     getAll() {
