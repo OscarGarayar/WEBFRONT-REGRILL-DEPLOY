@@ -8,15 +8,10 @@ export class SupplierProfileApiService {
         return response.data.map(supplierProfileData =>{
             return new SupplierProfile({
                 id: supplierProfileData.id,
-                name: supplierProfileData.name,
-                address: supplierProfileData.address,
+                dni: supplierProfileData.dni,
+                firstname: supplierProfileData.firstname,
+                lastName: supplierProfileData.lastName,
                 email: supplierProfileData.email,
-                phoneNumber: supplierProfileData.phoneNumber,
-                contactPerson: supplierProfileData.contactPerson,
-                description: supplierProfileData.description,
-                businessType: supplierProfileData.businessType,
-                ordersFinished: supplierProfileData.ordersFinished,
-                ordersPending: supplierProfileData.ordersPending,
             })
         })
     }

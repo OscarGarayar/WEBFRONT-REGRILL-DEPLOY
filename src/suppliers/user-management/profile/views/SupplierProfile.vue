@@ -28,7 +28,9 @@ onMounted(async () => {
             <Splitter layout="vertical">
                 <SplitterPanel class="flex items-center justify-center" :size="15">
                     <div v-for="profile in profiles" :key="profile.id" class="mb-4">
-                        <h3>{{ profile.name }}</h3>
+                        <h3>{{ profile.firstname }}</h3>
+                        <h3>{{ profile.lastName }}</h3>
+
                     </div> </SplitterPanel>
                 <SplitterPanel :size="85">
                     <Splitter>
@@ -50,12 +52,9 @@ onMounted(async () => {
                         </SplitterPanel>
                         <SplitterPanel class="flex items-center justify-center" :size="80">
                             <div v-for="profile in profiles" :key="profile.id" class="mb-4">
-                                <p>{{ profile.description }}</p>
                                 <p><strong>Email:</strong> {{ profile.email }}</p>
-                                <p><strong>Addres:</strong> {{ profile.address }}</p>
-                                <p><strong>Business Type:</strong> {{ profile.businessType }}</p>
-                                <p><strong>Phone:</strong> {{ profile.phoneNumber }}</p>
-                                <p><strong>Contact Person:</strong> {{ profile.contactPerson }}</p>
+                                <p><strong>Email:</strong> {{ profile.dni }}</p>
+
                             </div>
                         </SplitterPanel>
                     </Splitter>

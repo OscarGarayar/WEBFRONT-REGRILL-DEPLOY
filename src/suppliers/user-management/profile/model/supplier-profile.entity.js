@@ -1,15 +1,11 @@
 export class SupplierProfile{
-    constructor({id, name, address, email, phoneNumber, contactPerson, description, businessType,ordersFinished,ordersPending}) {
+    constructor({id, dni, firstname,lastName, email}) {
         this.id = id;
-        this.name = name;
-        this.address = address;
+        this.dni = dni;
+        this.firstname = firstname;
+        this.lastName = lastName;
         this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.contactPerson = contactPerson;
-        this.description = description;
-        this.businessType = businessType;
-        this.ordersFinished = ordersFinished;
-        this.ordersPending = ordersPending;
+        this.password = password;
 
     }
 }
