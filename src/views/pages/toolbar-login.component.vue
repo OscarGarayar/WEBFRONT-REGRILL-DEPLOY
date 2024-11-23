@@ -11,9 +11,9 @@ export default {
             <template #start>
                 <div class="toolbar-content">
                     <router-link to="/supplier/dashboard" class="home">
-                        <img src="@/assets/Logo.png" alt="logo" class="logo" />
                         <span class="title-container">RE-GRILL</span>
                         <span class="title-container">distributor</span>
+                        <p style="color: white; padding-left: 15px">Hacer click acá para ir al dashboard</p>
                     </router-link>
                 </div>
             </template>
