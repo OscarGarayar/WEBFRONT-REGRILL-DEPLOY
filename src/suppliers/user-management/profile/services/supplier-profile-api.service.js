@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export class SupplierProfileApiService {
     async getSupplierProfile(){
-        const url = 'http://localhost:5086/api/v1/Suppliers'
+        const url = 'http://localhost:5086/api/v1/users/1'
         const response = await axios.get(url);
         return response.data.map(supplierProfileData =>{
             return new SupplierProfile({
