@@ -24,7 +24,7 @@ const router = createRouter({
                 },
                 {
                     path: '/supplier/new-orders',
-                    name: 'orderlist',
+                    name: 'neworderlist',
                     component: () => import('@/suppliers/order-management/order-list/views/NewOrderList.vue')
                 },
                 {
