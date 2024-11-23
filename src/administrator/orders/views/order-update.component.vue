@@ -26,12 +26,20 @@ export default {
         async updateOrder() {
             const orderApiService = new OrdersApiService();
             try {
+                if (this.order.time && !this.order.time.includes('T')) {
+                    const [hours, minutes] = this.order.time.split(':');
+                    const now = new Date();
+                    now.setHours(hours, minutes, 0, 0);
+                    this.order.time = now.toISOString();
+                }
+                console.log(this.order);
                 await orderApiService.update(this.order.id, this.order);
                 this.$router.push('/orders');
             } catch (error) {
                 console.error('Error updating order:', error);
-            };
+            }
         }
+
     }
 };
 </script>
@@ -50,10 +58,7 @@ export default {
             </div>
             <div class="form-group">
                 <label for="status">Status:</label>
-                <select v-model="order.status" class="form-control">
-                    <option value="In preparation">In preparation</option>
-                    <option value="Finish">Finish</option>
-                </select>
+                <input v-model="order.status" class="form-control">
             </div>
             <div class="form-buttons">
                 <button type="submit" class="btn btn-update">Update Order</button>

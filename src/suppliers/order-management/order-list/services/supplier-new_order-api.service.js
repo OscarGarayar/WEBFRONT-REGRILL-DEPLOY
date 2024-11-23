@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export class SupplierNewOrderApiService{
     async getSupplierOrder(){
-        const url = 'http://localhost:3000/SupplierNewOrder'
+        const url = 'http://localhost:5086/api/v1/orders'
         const response = await axios.get(url);
         return response.data.map(supplierOrderData =>{
             return new SupplierNewOrder({

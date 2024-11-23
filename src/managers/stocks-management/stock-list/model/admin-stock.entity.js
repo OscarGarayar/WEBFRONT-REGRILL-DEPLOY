@@ -5,7 +5,5 @@ export class AdminStock{
         this.ingredient = ingredient;
         this.quantity = quantity;
         this.supplier = supplier;
-
     }
-
 }

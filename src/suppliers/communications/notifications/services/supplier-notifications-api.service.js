@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export class SupplierNotificationApiService {
     async getSupplierNotifications(){
-        const url = 'http://localhost:3000/Notifications'
+        const url = 'http://localhost:5086/api/v1/notifications'
         const response = await axios.get(url);
         return response.data.map(supplierNotificationData =>{
             return new SupplierNotifications({

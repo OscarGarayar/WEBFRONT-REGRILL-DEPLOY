@@ -30,9 +30,16 @@ export class Order {
             cash: this.cash,
             name: this.name,
             table: this.table,
-            time: this.time,
+            time: this.formatTime(this.time),
             status: this.status,
             quantity: this.quantity
         };
+    }
+
+    formatTime(time) {
+        const [hours, minutes] = time.split(':');
+        const now = new Date();
+        now.setHours(hours, minutes, 0, 0);
+        return now.toISOString();
     }
 }
