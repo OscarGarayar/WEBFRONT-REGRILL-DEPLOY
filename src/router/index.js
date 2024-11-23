@@ -23,6 +23,11 @@ const router = createRouter({
                     component: () => import('@/suppliers/order-management/order-list/views/OrderList.vue')
                 },
                 {
+                    path: '/supplier/new-orders',
+                    name: 'orderlist',
+                    component: () => import('@/suppliers/order-management/order-list/views/NewOrderList.vue')
+                },
+                {
                     path:'/admin/Inventory',
                     name: 'inventory',
                     component:() => import('@/managers/stocks-management/stock-list/views/StockList.vue')
