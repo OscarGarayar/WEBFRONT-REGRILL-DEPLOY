@@ -1,5 +1,5 @@
 export class Invoice {
-    constructor( id, invoiceNumber, date, client, total, status ) {
+    constructor({id, invoiceNumber, date, client, total, status}) {
         this.id = id;
         this.invoiceNumber = invoiceNumber;
         this.date = date;
@@ -8,3 +8,4 @@ export class Invoice {
         this.status = status;
     }
 }
+
